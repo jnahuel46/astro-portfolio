@@ -3,6 +3,7 @@ import Button from '@components/ui/Button.astro';
 import ToggleTheme from '@components/ui/ToggleTheme.astro';
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
 
+
 const menuitems = [
 	{
 		title: 'About',
@@ -22,20 +23,17 @@ const menuitems = [
 <script>
 	// Encuentra todos los botones con la clase `alert` en la página.
 	const button = document.querySelector('button.alert');
+	import pdf from '@assets/images/cv.pdf'
 
 	// Maneja los clics en cada botón.
 	button?.addEventListener('click', () => {
-		// Path to the PDF file in the same repository
-		const rutaPDF = 'src/assets/images/cv.pdf';
-
 		// Create a temporary link element
 		const enlace = document.createElement('a');
-
 		// Set the href property of the link with the path to the PDF file
-		enlace.href = rutaPDF;
+		enlace.href = pdf;
 
 		// Set the download attribute so that the browser suggests a file name and enables the download
-		enlace.download = 'CV.pdf';
+		enlace.download = 'cv-muriette-jeremias.pdf';
 
 		// Set the download attribute so that the browser suggests a file name and enables the download
 		document.body.appendChild(enlace);
