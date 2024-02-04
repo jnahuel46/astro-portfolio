@@ -3,6 +3,14 @@ import projectImage from '@assets/images/project.png';
 import heroeApp from '@assets/images/heroes.png';
 import restServer from '@assets/images/rest-server.png';
 import nextCourse from '@assets/images/next-js-course.png';
+import gifApp from '@assets/images/gifApp.png';
+import blackjack from '@assets/images/blackjack.png';
+import toDo from '@assets/images/todo-app.png';
+import weather from '@assets/images/weather.png';
+import storybook from '@assets/images/storybook.png';
+import npm from '@assets/images/npm-package.png';
+import journal from '@assets/images/journal.png';
+
 
 import { Image } from '@astrojs/image/components';
 import Tags from '@components/ui/Tags.astro';
@@ -28,6 +36,27 @@ const {
 const returnImage = (img: string) => {
 	if (img === 'heroe') {
 		return heroeApp;
+	}
+	if (img === 'storybook') {
+		return storybook;
+	}
+	if (img === 'npm') {
+		return npm;
+	}
+	if (img === 'journal') {
+		return journal;
+	}
+	if (img === 'weather') {
+		return weather;
+	}
+	if (img === 'gifApp') {
+		return gifApp;
+	}
+	if (img === 'todo-app') {
+		return toDo;
+	}
+	if (img === 'blackjack') {
+		return blackjack;
 	}
 	if (img === 'next-js-course') {
 		return nextCourse;
@@ -59,10 +88,10 @@ const returnImage = (img: string) => {
 			</div>
 		</a>
 		<div class="mt-1 p-2">
-			<h3 class="text-xl text-orange lg:text-2xl">{title}</h3>
+			<h3 class="text-xl text-cyan lg:text-2xl">{title}</h3>
 			<p class="text-s text-black">{description}</p>
 			<p class="text-s text-black" style="margin-top: 5px;">
-				<a href={goToRepo} target="_blank" aria-label="link to project">Go to repository 🚀</a>
+				<a class="text-black hover:text-cyan dark:text-black dark:hover:text-cyan" href={goToRepo} target="_blank" aria-label="link to project">Go to repository 🚀</a>
 			</p>
 			<Tags tags={tags} />
 		</div>

@@ -1,9 +1,9 @@
 ---
 inProgress: false
-title: Heroes App
-description: Application developed with React + Vite stack (REACT JS) which allows the search and view a list of heroes related to MARVEL and DC companies.
-img_alt: heroe
-link: https://jnahuel46.github.io/test-heroe/
-goToRepo: https://github.com/jnahuel46/heroes-app
-tags: ['React', 'CSS', 'Vite', 'JavaScript', 'HTML']
+title: Financial Dashboard (NextJS)
+description: FullStack Web app, with authentication that provide the ability for users to add, edit, and delete invoices, official course of NextJS Learn, project and database deployed on Vercel.
+img_alt: next-js-course
+link: https://next-14-course-eight.vercel.app/
+goToRepo: https://github.com/jnahuel46/Next-14-Course
+tags: ['Next JS', 'Vercel', 'Tailwind', 'Postgree SQL']
 ---

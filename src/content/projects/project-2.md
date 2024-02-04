@@ -1,9 +1,9 @@
 ---
 inProgress: false
-title: Caffe App Rest Server
-description: Rest server, which allows us to perform all the crud operations in the backend of a cafe-bar, which has its users, products and categories.
-img_alt: rest-server
-link: https://github.com/jnahuel46/REST-server
-goToRepo: https://github.com/jnahuel46/REST-server
-tags: ['Node JS', 'mongoose', 'Express', 'JWT']
+title: Storybook in React App
+description: Integrate Storybook using Npx in React app. Create a React comp from scratch, build stories, and configure them within the Storybook environment.
+img_alt: storybook
+link: https://jnahuel46.github.io/sb-components-vite/?path=/docs/ui-mylabel--docs
+goToRepo: https://github.com/jnahuel46/sb-components-vite
+tags: ['React', 'TypeScript', 'Vite', 'Storybook', 'HTML']
 ---

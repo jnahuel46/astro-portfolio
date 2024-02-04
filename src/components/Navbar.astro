@@ -19,10 +19,39 @@ const menuitems = [
 ];
 ---
 
-<header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
+<script>
+	// Encuentra todos los botones con la clase `alert` en la página.
+	const button = document.querySelector('button.alert');
+
+	// Maneja los clics en cada botón.
+	button?.addEventListener('click', () => {
+		// Path to the PDF file in the same repository
+		const rutaPDF = 'src/assets/images/cv.pdf';
+
+		// Create a temporary link element
+		const enlace = document.createElement('a');
+
+		// Set the href property of the link with the path to the PDF file
+		enlace.href = rutaPDF;
+
+		// Set the download attribute so that the browser suggests a file name and enables the download
+		enlace.download = 'CV.pdf';
+
+		// Set the download attribute so that the browser suggests a file name and enables the download
+		document.body.appendChild(enlace);
+
+		// Simulate a click on the link to initiate the download
+		enlace.click();
+
+		// Remove the link from the document after the download
+		document.body.removeChild(enlace);
+	});
+</script>
+
+<header data-testId="header" class="mb-20 mt-5 flex flex-col items-center justify-between lg:flex-row">
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
-			<Button size={'sm'} name="Download CV">Download CV</Button>
+			<Button size={'sm'} class="alert" name="Download CV">Download CV</Button>
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
@@ -36,7 +65,7 @@ const menuitems = [
 								<a
 									aria-label="navigation link"
 									href={item.path}
-									class="flex py-2 text-black hover:text-orange dark:text-white dark:hover:text-orange lg:px-3"
+									class="hover:text-cyan dark:hover:text-cyan flex py-2 text-black dark:text-white lg:px-3"
 								>
 									{item.title}
 								</a>
